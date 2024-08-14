@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: black;
     padding: 0;
     margin: 0;
 }
@@ -24,6 +24,8 @@ header {
     padding: 20px;
     background: #fff;
     color: #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .header-logos {
@@ -85,9 +87,13 @@ header h1 {
 .intro-image img {
     max-width: 100%;
     height: auto;
-    border-top-right-radius: 5%;
-    border-bottom-right-radius: 5%;
-
+    border-radius: 10px;
+    border: 3px solid #644646;
+    object-fit: cover;
+    transition: all 3s ease;
+}
+.intro-image img:hover{
+    transform: scale(0.9);
 }
 
 #about-challenge p {
@@ -125,12 +131,16 @@ header h1 {
     padding: 15px;
     margin: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(33% - 20px);
     max-width: 300px;
     text-align: center; /* Center text and images inside the card */
+    transition: all 3s ease;
+    cursor: pointer;
 }
-
+.card:hover{
+    transform: scale(1.05);
+}
 .card img {
     max-width: 60px; /* Adjust size as needed */
     height: auto;
@@ -145,6 +155,7 @@ header h1 {
 
 .card p {
     font-size: 1rem;
+    font-weight: 500;
 }
 
 
@@ -188,6 +199,7 @@ header h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
     border-radius: 8px; /* Rounded corners for the review box */
     font-size: 1rem; /* Standard font size for readability */
+    font-weight: 800;
 }
 
 /* Keyframes for the scrolling animation */
@@ -232,8 +244,15 @@ header h1 {
 }
 
 .benefit img {
-    max-width: 50px;
+    max-width: 350px;
+    border-radius: 10px;
+    object-fit: cover;
     margin-bottom: 10px;
+    border: 5px solid #644646;
+    transition:all 3s ease;
+}
+.benefit img:hover{
+    transform: scale(0.9);
 }
 
 .benefit h3 {
@@ -242,7 +261,8 @@ header h1 {
 }
 
 .benefit p {
-    font-size: 1rem;
+    font-size: 1.5rem;
+
 }
 
 /* Form Section */
@@ -252,6 +272,8 @@ header h1 {
     padding: 20px;
     background: #fff;
     color: #000;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
 }
 
 .form-header {
@@ -292,7 +314,7 @@ header h1 {
 }
 
 .form-container button {
-    background: #FFA500;
+    background: #644646;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -302,17 +324,22 @@ header h1 {
 }
 
 .form-container button:hover {
-    background: #e69500;
+    background: #6b5151;
 }
 
 .profile-card {
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
 }
 
 .profile-card img {
-    border-radius: 50%;
-    max-width: 150px;
+    border-radius: 100px;
+    border: 2px solid black;
+    max-width: 200px;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 
 .profile-card h3 {
@@ -326,8 +353,9 @@ header h1 {
 footer {
     text-align: center;
     padding: 20px;
-    background: #fff;
+    background: #644646;
     color: #000;
+    border-radius: 10px;
 }
 
 footer p {
