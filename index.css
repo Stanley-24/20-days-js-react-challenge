@@ -1,393 +1,473 @@
-/* Reset some default styles */
+/* Reset some default styles to ensure consistent appearance across browsers */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
+/* Basic styles for the body element */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: black;
-    padding: 0;
-    margin: 0;
+    font-family: Arial, sans-serif; /* Set font family */
+    line-height: 1.6; /* Increase line height for better readability */
+    color: #333; /* Dark text color */
+    background-color: black; /* Set background color */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
+/* Main content area styling */
 main {
-    margin: 35px;
+    margin: 35px; /* Space around the main content */
 }
 
 /* Header Section */
 header {
-    text-align: center;
-    padding: 20px;
-    background: #fff;
-    color: #000;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Space inside header */
+    background: #fff; /* White background */
+    color: #000; /* Black text color */
+    border-top-left-radius: 10px; /* Rounded top-left corner */
+    border-top-right-radius: 10px; /* Rounded top-right corner */
 }
 
+/* Container for logos in the header */
 .header-logos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center-align logos */
+    gap: 20px; /* Space between logos */
+    margin-bottom: 20px; /* Space below logos */
 }
 
 .header-logos .logo {
-    width: 100px;
-    height: auto;
+    width: 100px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
 }
 
+/* Heading styles in the header */
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem; /* Larger font size for the main heading */
+    margin-bottom: 10px; /* Space below heading */
 }
 
+/* Subtitle styling */
 .subtitle {
-    font-size: 1.2rem;
-    color: #666;
+    font-size: 1.2rem; /* Font size for subtitles */
+    color: #666; /* Gray color for subtitles */
 }
 
 /* About the Challenge Section */
 #about-challenge {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background: #fff;
-    color: #000;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items horizontally */
+    padding: 20px; /* Space inside the section */
+    background: #fff; /* White background */
+    color: #000; /* Black text color */
 }
 
+/* Heading styles in the about section */
 #about-challenge h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2rem; /* Font size for section heading */
+    margin-bottom: 20px; /* Space below heading */
 }
 
+/* Container for about section card layout */
 .about-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
     gap: 20px; /* Space between text and image */
-    max-width: 1200px; /* Adjust as needed */
-    width: 100%;
+    max-width: 1200px; /* Max width for container */
+    width: 100%; /* Full width */
 }
 
+/* Styling for text in the about section */
 .intro-text {
-    flex: 1;
-    text-align: center;
+    flex: 1; /* Take up available space */
+    text-align: center; /* Center-align text */
 }
 
+/* Styling for image in the about section */
 .intro-image {
-    flex: 1;
-    width: 100%;
+    flex: 1; /* Take up available space */
+    width: 100%; /* Full width */
 }
 
+/* Styling for images in the about section */
 .intro-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 3px solid #644646;
-    object-fit: cover;
-    transition: all 3s ease;
-}
-.intro-image img:hover{
-    transform: scale(0.9);
+    max-width: 100%; /* Ensure image fits within container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid #644646; /* Border color */
+    object-fit: cover; /* Ensure image covers the area */
+    transition: all 3s ease; /* Smooth transition on hover */
 }
 
+.intro-image img:hover {
+    transform: scale(0.9); /* Slightly shrink image on hover */
+}
+
+/* Paragraph styling in the about section */
 #about-challenge p {
-    margin-bottom: 10px;
-    font-size: 1.12rem;
+    margin-bottom: 10px; /* Space below paragraphs */
+    font-size: 1.12rem; /* Font size for paragraphs */
 }
 
 /* Resources Section */
 .resources-section {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background: #fff;
-    color: #000;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px; /* Space inside the section */
+    background: #fff; /* White background */
+    color: #000; /* Black text color */
 }
 
+/* Header styling in the resources section */
 .resources-header {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center-align header */
+    padding-bottom: 20px; /* Space below header */
 }
 
 .resources-header h2 {
-    margin: 0;
+    margin: 0; /* Remove default margin */
+    font-size: 2rem; /* Font size for header */
 }
 
+/* Container for resource cards */
 .resources-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center; /* Center-align cards */
 }
 
+/* Individual resource card styling */
 .card {
-    background: #f4f4f4;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33% - 20px);
-    max-width: 300px;
-    text-align: center; /* Center text and images inside the card */
-    transition: all 3s ease;
-    cursor: pointer;
+    background: #f4f4f4; /* Light gray background */
+    padding: 15px; /* Space inside the card */
+    margin: 10px; /* Space around the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    flex: 1 1 calc(33% - 20px); /* Responsive width with gap */
+    max-width: 300px; /* Max width for card */
+    text-align: center; /* Center text inside the card */
+    transition: all 3s ease; /* Smooth transition on hover */
+    cursor: pointer; /* Pointer cursor on hover */
 }
-.card:hover{
-    transform: scale(1.05);
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
 }
+
+/* Image styling inside resource cards */
 .card img {
-    max-width: 60px; /* Adjust size as needed */
-    height: auto;
-    display: block; /* Ensures the image is centered */
-    margin: 0 auto 10px; /* Centers the image horizontally and adds space below */
+    max-width: 60px; /* Max width for images */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image is centered */
+    margin: 0 auto 10px; /* Center image and add space below */
 }
 
+/* Heading inside resource cards */
 .card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1.2rem; /* Font size for headings */
+    margin-bottom: 10px; /* Space below heading */
 }
 
+/* Paragraph styling inside resource cards */
 .card p {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1rem; /* Font size for paragraphs */
+    font-weight: 500; /* Semi-bold text */
 }
 
-/* Reviews section styling */
+/* Reviews Section Styling */
 #reviews {
-    padding: 20px; /* Padding around the reviews section */
+    padding: 20px; /* Space inside the section */
     background-color: #f9f9f9; /* Light background color for contrast */
-    color: #333; /* Dark text color for readability */
+    color: #333; /* Dark text color */
     overflow: hidden; /* Hide any content that overflows the section */
 }
 
-/* Container for the reviews */
+/* Container for reviews section */
 .reviews-container {
-    max-width: 1200px; /* Max width to center the content */
-    margin: 0 auto; /* Center the container horizontally */
-    text-align: center; /* Center-align the text */
+    max-width: 1200px; /* Max width to center content */
+    margin: 0 auto; /* Center container horizontally */
+    text-align: center; /* Center-align text */
     position: relative; /* Relative positioning for flexibility */
 }
 
-/* Styling for the section heading */
+/* Heading styling in the reviews section */
 .reviews-container h2 {
-    margin-bottom: 20px; /* Space below the heading */
+    margin-bottom: 20px; /* Space below heading */
     font-size: 2rem; /* Larger font size for prominence */
 }
 
-/* Slider that holds and scrolls the reviews */
+/* Slider container for scrolling reviews */
 .reviews-slider {
-    display: flex; /* Flexbox layout for horizontal alignment */
+    display: flex; /* Use flexbox for horizontal alignment */
     justify-content: space-around; /* Space between review boxes */
     align-items: center; /* Center items vertically */
-    flex-wrap: nowrap; /* Prevent wrapping, keep reviews in one line */
+    flex-wrap: nowrap; /* Prevent wrapping of review boxes */
     gap: 20px; /* Space between each review box */
     animation: scrollReviews 15s linear infinite; /* Smooth, infinite scrolling animation */
 }
 
-/* Styling for each individual review box */
+/* Individual review box styling */
 .review-box {
     min-width: 300px; /* Minimum width for each review box */
-    padding: 15px; /* Padding inside each box */
-    background: #fff; /* White background for the review box */
+    padding: 15px; /* Space inside each box */
+    background: #fff; /* White background for review box */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    border-radius: 8px; /* Rounded corners for the review box */
-    font-size: 1rem; /* Standard font size for readability */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem; /* Standard font size */
 }
 
-/* Styling for the star ratings */
+/* Styling for star ratings */
 .stars {
-    margin-top: 10px; /* Space above the star ratings */
+    margin-top: 10px; /* Space above star ratings */
     font-size: 1.5rem; /* Larger font size for visibility */
-    color: #FFA500; /* Gold color for the stars */
+    color: #FFA500; /* Gold color for stars */
 }
 
 /* Keyframes for the scrolling animation */
 @keyframes scrollReviews {
     0% {
-        transform: translateX(100%); /* Start with the content off-screen to the right */
+        transform: translateX(100%); /* Start with content off-screen to the right */
     }
     100% {
-        transform: translateX(-100%); /* End with the content off-screen to the left */
+        transform: translateX(-100%); /* End with content off-screen to the left */
     }
 }
-
 
 /* Benefits of Joining Section */
 .benefits-section {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background: #f4f4f4;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px; /* Space inside the section */
+    background: #f4f4f4; /* Light gray background */
 }
 
+/* Header styling in the benefits section */
 .benefits-header {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center-align header */
+    padding-bottom: 20px; /* Space below header */
 }
 
 .benefits-header h2 {
-    margin: 0;
+    margin: 0; /* Remove default margin */
+    font-size: 2rem; /* Font size for header */
 }
 
+/* Layout for benefits section with three columns */
 .three-column-layout {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-around; /* Space around items */
 }
 
+/* Individual benefit styling */
 .benefit {
-    flex: 1 1 calc(33% - 20px);
-    text-align: center;
-    padding: 20px;
+    flex: 1 1 calc(33% - 20px); /* Responsive width with gap */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Space inside each benefit */
 }
 
+/* Image styling inside benefits section */
 .benefit img {
-    max-width: 350px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border: 5px solid #644646;
-    transition:all 3s ease;
-}
-.benefit img:hover{
-    transform: scale(0.9);
+    max-width: 350px; /* Max width for images */
+    border-radius: 10px; /* Rounded corners */
+    object-fit: cover; /* Ensure image covers the area */
+    margin-bottom: 10px; /* Space below image */
+    border: 5px solid #644646; /* Border color */
+    transition: all 3s ease; /* Smooth transition on hover */
 }
 
+.benefit img:hover {
+    transform: scale(0.9); /* Slightly shrink image on hover */
+}
+
+/* Heading inside benefits section */
 .benefit h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Font size for headings */
+    margin-bottom: 10px; /* Space below heading */
 }
 
+/* Paragraph styling inside benefits section */
 .benefit p {
-    font-size: 1.5rem;
-
+    font-size: 1.5rem; /* Font size for paragraphs */
 }
 
 /* Form Section */
 .form-section {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background: #fff;
-    color: #000;
-   border-bottom-left-radius: 10px;
-   border-bottom-right-radius: 10px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px; /* Space inside the section */
+    background: #fff; /* White background */
+    color: #000; /* Black text color */
+    border-bottom-left-radius: 10px; /* Rounded bottom-left corner */
+    border-bottom-right-radius: 10px; /* Rounded bottom-right corner */
 }
 
+/* Header styling in the form section */
 .form-header {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center-align header */
+    padding-bottom: 20px; /* Space below header */
 }
 
 .form-header h2 {
-    margin: 0;
+    margin: 0; /* Remove default margin */
 }
 
+/* Container for form elements */
 .form-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 800px;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of form elements */
+    justify-content: center; /* Center-align form elements */
+    gap: 20px; /* Space between form elements */
+    max-width: 800px; /* Max width for container */
 }
 
+/* Form styling */
 .form-container form {
-    max-width: 500px;
-    width: 100%;
+    max-width: 500px; /* Max width for form */
+    width: 100%; /* Full width */
 }
 
+/* Label styling inside the form */
 .form-container label {
-    display: block;
-    margin-bottom: 5px;
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
 }
 
+/* Input field styling */
 .form-container input[type="text"],
 .form-container input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    width: 100%; /* Full width */
+    padding: 10px; /* Space inside input fields */
+    margin-bottom: 10px; /* Space below input fields */
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 4px; /* Rounded corners */
 }
 
+/* Button styling inside the form */
 .form-container button {
-    background: #644646;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
+    background: #644646; /* Background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Space inside button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
 }
 
 .form-container button:hover {
-    background: #6b5151;
+    background: #6b5151; /* Darker background on hover */
 }
 
+/* Profile card styling */
 .profile-card {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
+    text-align: center; /* Center-align text */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    margin: 50px; /* Space around the profile card */
 }
 
+/* Image styling in the profile card */
 .profile-card img {
-    border-radius: 100px;
-    border: 2px solid black;
-    max-width: 200px;
-    margin-bottom: 10px;
-    object-fit: cover;
+    border-radius: 100px; /* Circular image */
+    border: 2px solid black; /* Border color */
+    max-width: 200px; /* Max width for image */
+    margin-bottom: 10px; /* Space below image */
+    object-fit: cover; /* Ensure image covers the area */
 }
 
+/* Heading styling in the profile card */
 .profile-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Font size for headings */
 }
 
+/* Paragraph styling in the profile card */
 .profile-card p {
-    font-size: 1rem;
+    font-size: 1rem; /* Font size for paragraphs */
 }
+
 /* Footer Section */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #644646;
-    color: #000;
-    border-radius: 10px;
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Space inside footer */
+    background: #644646; /* Dark background color */
+    color: #000; /* Black text color */
+    border-radius: 10px; /* Rounded corners */
 }
 
+/* Paragraph styling in the footer */
 footer p {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Space below paragraphs */
 }
 
+/* Link styling in the footer */
 footer a {
-    color: #FFA500;
-    text-decoration: none;
+    color: #FFA500; /* Orange color for links */
+    text-decoration: none; /* Remove underline */
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .about-card{
-        flex-direction: column;
+    /* Adjust layout for smaller screens */
+    .about-card {
+        flex-direction: column; /* Stack items vertically */
     }
 
-    .card,
-    .benefit {
-        flex: 1 1 100%;
+    .card {
+        flex: 1 1 100%; /* Full width for cards */
     }
 
     .testimonial {
-        flex: 1 1 100%;
+        flex: 1 1 100%; /* Full width for testimonials */
+    }
+
+    main {
+        margin: 5px; /* Reduce margin for smaller screens */
     }
 }
+
+@media (max-width: 1114px) {
+    /* Adjust layout for medium screens */
+    main {
+        margin: 20px; /* Adjust margin */
+    }
+}
+
+@media (max-width: 409px) {
+    /* Adjust heading styles for very small screens */
+    #about-challenge h2 {
+        white-space: nowrap; /* Prevent heading from wrapping */
+    }
+}
+
+@media (max-width: 440px) {
+    /* Adjust layout for smaller screens */
+    .benefit {
+        flex-wrap: wrap; /* Allow wrapping of benefits */
+    }
+}
+
+/* Uncomment this media query if needed for further adjustments 
+
+@media (max-width: 450px) {
+    .benefit {
+        flex-wrap: wrap; /* Allow wrapping of benefits 
+    }
+}
+
+
+@media (max-width: 750px) {
+    main {
+        margin: 15px; /* Adjust margin for smaller screens 
+}
+*/
