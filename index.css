@@ -1,19 +1,23 @@
-/* Reset some default styles */
+/* Reset some default styles to ensure consistent appearance across browsers */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Basic styles for the body element */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: black;
+ out/in
     padding: 0;
     margin: 0;
+ main
 }
 
+/* Main content area styling */
 main {
     margin: 35px;
 }
@@ -69,8 +73,8 @@ header h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px; /* Space between text and image */
-    max-width: 1200px; /* Adjust as needed */
+    gap: 20px;
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -92,7 +96,11 @@ header h1 {
     object-fit: cover;
     transition: all 3s ease;
 }
+out/in
 .intro-image img:hover{
+
+.intro-image img:hover 
+  main
     transform: scale(0.9);
 }
 
@@ -118,6 +126,7 @@ header h1 {
 
 .resources-header h2 {
     margin: 0;
+    font-size: 2rem;
 }
 
 .resources-cards {
@@ -134,18 +143,26 @@ header h1 {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(33% - 20px);
     max-width: 300px;
+out/in
     text-align: center; /* Center text and images inside the card */
     transition: all 3s ease;
     cursor: pointer;
 }
 .card:hover{
+    text-align: center;
+    transition: all 3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+  main
     transform: scale(1.05);
 }
 .card img {
-    max-width: 60px; /* Adjust size as needed */
+    max-width: 60px;
     height: auto;
-    display: block; /* Ensures the image is centered */
-    margin: 0 auto 10px; /* Centers the image horizontally and adds space below */
+    display: block;
+    margin: 0 auto 10px;
 }
 
 .card h3 {
@@ -158,41 +175,37 @@ header h1 {
     font-weight: 500;
 }
 
-
-/* Reviews section styling */
+/* Reviews Section Styling */
 #reviews {
-    padding: 20px; /* Padding around the reviews section */
-    background-color: #f9f9f9; /* Light background color for contrast */
-    color: #333; /* Dark text color for readability */
-    overflow: hidden; /* Hide any content that overflows the section */
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow: hidden;
 }
 
-/* Container for the reviews */
 .reviews-container {
-    max-width: 1200px; /* Max width to center the content */
-    margin: 0 auto; /* Center the container horizontally */
-    text-align: center; /* Center-align the text */
-    position: relative; /* Relative positioning for flexibility */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
 }
 
-/* Styling for the section heading */
 .reviews-container h2 {
-    margin-bottom: 20px; /* Space below the heading */
-    font-size: 2rem; /* Larger font size for prominence */
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
-/* Slider that holds and scrolls the reviews */
 .reviews-slider {
-    display: flex; /* Flexbox layout for horizontal alignment */
-    justify-content: space-around; /* Space between review boxes */
-    align-items: center; /* Center items vertically */
-    flex-wrap: nowrap; /* Prevent wrapping, keep reviews in one line */
-    gap: 20px; /* Space between each review box */
-    animation: scrollReviews 20s linear infinite; /* Smooth, infinite scrolling animation */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    animation: scrollReviews 15s linear infinite;
 }
 
-/* Styling for each individual review box */
 .review-box {
+ out/in
     min-width: 300px; /* Minimum width for each review box */
     padding: 15px; /* Padding inside each box */
     background: #fff; /* White background for the review box */
@@ -200,18 +213,30 @@ header h1 {
     border-radius: 8px; /* Rounded corners for the review box */
     font-size: 1rem; /* Standard font size for readability */
     font-weight: 800;
+
+    min-width: 300px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1rem;
 }
 
-/* Keyframes for the scrolling animation */
+.stars {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #FFA500;
+ main
+}
+
 @keyframes scrollReviews {
     0% {
-        transform: translateX(100%); /* Start with the content off-screen to the right */
+        transform: translateX(100%);
     }
     100% {
-        transform: translateX(-100%); /* End with the content off-screen to the left */
+        transform: translateX(-100%);
     }
 }
-
 
 /* Benefits of Joining Section */
 .benefits-section {
@@ -229,6 +254,7 @@ header h1 {
 
 .benefits-header h2 {
     margin: 0;
+    font-size: 2rem;
 }
 
 .three-column-layout {
@@ -249,9 +275,16 @@ header h1 {
     object-fit: cover;
     margin-bottom: 10px;
     border: 5px solid #644646;
+ out/in
     transition:all 3s ease;
 }
 .benefit img:hover{
+
+    transition: all 3s ease;
+}
+
+.benefit img:hover {
+ main
     transform: scale(0.9);
 }
 
@@ -262,7 +295,9 @@ header h1 {
 
 .benefit p {
     font-size: 1.5rem;
+ out/in
 
+ main
 }
 
 /* Form Section */
@@ -272,18 +307,32 @@ header h1 {
     padding: 20px;
     background: #fff;
     color: #000;
+ out/in
    border-bottom-left-radius: 10px;
    border-bottom-right-radius: 10px;
+=======
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ main
 }
 
 .form-header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 20px;
 }
 
 .form-header h2 {
     margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.form-header p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
 }
 
 .form-container {
@@ -292,28 +341,39 @@ header h1 {
     justify-content: center;
     gap: 20px;
     max-width: 800px;
+    margin: 0 auto;
 }
 
-.form-container form {
+form {
     max-width: 500px;
     width: 100%;
 }
 
-.form-container label {
+form label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
-.form-container input[type="text"],
-.form-container input[type="email"] {
+form input[type="text"],
+form input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 1rem;
 }
 
+ out/in
 .form-container button {
+
+form input::placeholder {
+    color: #999;
+}
+
+form button {
+ main
     background: #644646;
     color: #fff;
     border: none;
@@ -323,6 +383,7 @@ header h1 {
     font-size: 1rem;
 }
 
+ out/in
 .form-container button:hover {
     background: #6b5151;
 }
@@ -340,15 +401,12 @@ header h1 {
     max-width: 200px;
     margin-bottom: 10px;
     object-fit: cover;
+
+form button:hover {
+    background: #6b5151;
+ main
 }
 
-.profile-card h3 {
-    font-size: 1.2rem;
-}
-
-.profile-card p {
-    font-size: 1rem;
-}
 /* Footer Section */
 footer {
     text-align: center;
@@ -373,16 +431,141 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .about-card{
-        flex-direction: column;
+    /* Adjust layout for smaller screens */
+    .about-card {
+        flex-direction: column; /* Stack items vertically */
     }
 
-    .card,
-    .benefit {
-        flex: 1 1 100%;
+    .card {
+        flex: 1 1 100%; /* Full width for cards */
     }
 
     .testimonial {
-        flex: 1 1 100%;
+        flex: 1 1 100%; /* Full width for testimonials */
     }
+
+    main {
+        margin: 5px; /* Reduce margin for smaller screens */
+    }
+}
+
+@media (max-width: 1114px) {
+    /* Adjust layout for medium screens */
+    main {
+        margin: 20px; /* Adjust margin */
+    }
+}
+
+@media (max-width: 409px) {
+    #about-challenge h2 {
+        white-space: nowrap; /* Prevent heading from wrapping */
+    }
+}
+
+@media (max-width: 440px) {
+    .benefit {
+        flex-wrap: wrap; /* Allow wrapping of benefits */
+    }
+}
+
+
+
+/* Iphone 13 PRO MAX */
+@media (max-width: 428px) {
+    .benefit{
+        padding: 0;
+        max-width: 350px;
+    }
+
+}
+
+/* Iphone 13 PRO*/
+@media (max-width: 390px) {
+    .benefit{
+      
+        max-width: 350px;
+    }
+
+    .benefit img{
+        max-width: 310px;
+    }
+
+}
+
+/* Iphone 13 PRO*/
+@media (max-width: 375px) {
+
+
+    main{
+        margin: 10px;
+    }
+
+    #about-challenge h2{
+        font-size: 1.74rem;
+    }
+
+
+    .benefits-header h2{
+        font-size: 1.74rem;
+    }
+
+    .benefit{
+        padding: 10px;
+        max-width: 300px;
+    }
+
+    .benefit img{
+        max-width: 260px;
+    }
+
+}
+
+
+@media (max-width: 325px){
+    .benefit{
+        max-width: 260px;
+    }
+    .benefit img{
+    max-width: 240px;
+
+}
+    .form-header h2{
+        font-size: 1.50rem
+    }
+
+}
+
+@media only screen and (max-width: 309px) and (min-width: 150px) {
+    .benefit{
+        max-width: 189px;
+    }
+    .benefit img{
+        max-width: 160px;
+    }    
+
+    .benefits-header h2{
+        font-size: 1.14rem;
+    }
+
+
+    .form-header h2{
+        font-size: 15.8px
+    }
+    .form-header p{
+        font-size: 14.8px
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) and (min-width: 375px) {
+    .benefit{
+        max-width: 260px;
+        padding: 10px;
+    }
+    .benefit img{
+        max-width: 250px;
+    }    
+
+    
 }
