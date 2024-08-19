@@ -154,41 +154,46 @@
         </section>
 
         <!-- Form Section -->
-        <section id="signup" class="form-section">
+        <section class="form-section">
+            <!-- Form Header -->
             <div class="form-header">
-                <h2>Join the Challenge</h2>
+                <h2>Sign Up to Participate</h2>
+                <p>Join the 20 Days of Learning JavaScript & React Challenge.</p>
             </div>
+        
+            <!-- Form Container -->
             <div class="form-container">
-                <form action="#" method="POST">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <button type="submit">Join the Challenge Now</button>
+                <form action="#">
+                    <!-- First Name (Required) -->
+                    <label for="first-name">First Name <span style="color: red;">*</span></label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+        
+                    <!-- Last Name -->
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+        
+                    <!-- Email (Required) -->
+                    <label for="email">Email <span style="color: red;">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+                    <!-- Country (Required) -->
+                    <label for="country">Country <span style="color: red;">*</span></label>
+                    <input type="text" id="country" name="country" placeholder="Enter your country" required>
+        
+                    <!-- Submit Button -->
+                    <button type="submit">Sign Up</button>
                 </form>
-               
             </div>
-            <div class="profile-card">
-                <div class="profile-cards">
-                    <img src="./assets/images/host-profile-1.png" alt="Host Profile">
-                    <h3>Stanley Owarieta</h3>
-                    <p>Host, 20 Days of Learning JavaScript & React Challenge</p>
-                </div>
-                <div class="profile-cards">
-                    <img src="assets/images/host-profile-2.png" alt="Host Profile">
-                    <h3>Ojo Blessed</h3>
-                    <p>Co-Host, 20 Days of Learning JavaScript & React Challenge</p>
-                </div>
-            </div>
+        </section>
+        
 
         <!-- Footer Section -->
         <footer>
-            <p>Best regards,<br>Stanley Owarieta<br>Host, 20 Days of Learning JavaScript & React Challenge</p>
-            <p>Contact: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <p>Contact: <a href="mailto:owarieta24@outlook.com">Email me here</a></p>
             <p>Connect with us: 
                 <a href="https://github.com/Stanley-24">GitHub</a> | 
-                <a href="https://www.linkedin.com/in/stanleyowarieta/">LinkedIn</a> | 
-                <a href="https://twitter.com/yourprofile">X (formerly Twitter)</a>
+                <a href="https://www.linkedin.com/in/stanley-owarieta/">LinkedIn</a> | 
+                <a href="https://twitter.com/Stanley_24_">X (formerly Twitter)</a>
             </p>
             <p>This challenge is open-source. Feel free to contribute and bring new ideas!</p>
         </footer>
