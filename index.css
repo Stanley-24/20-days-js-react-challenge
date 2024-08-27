@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: black;
+    background-color: #464343;
 }
 
 /* Main content area styling */
@@ -22,8 +22,8 @@ main {
 header {
     text-align: center;
     padding: 20px;
-    background: #fff;
-    color: #000;
+    background: #3D85C6;
+    color: #CCCCCC;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -47,17 +47,19 @@ header h1 {
 
 .subtitle {
     font-size: 1.2rem;
-    color: #666;
+    color: #CCCCCC;
 }
-
+hr{
+    border: 5px solid #CCCCCC ;
+}
 /* About the Challenge Section */
 #about-challenge {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background: #fff;
-    color: #000;
+    background: #3D85C6;
+    color: #CCCCCC;
 }
 
 #about-challenge h2 {
@@ -88,7 +90,7 @@ header h1 {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    border: 3px solid #644646;
+    border: 3px solid #CCCCCC;
     object-fit: cover;
     transition: all 3s ease;
 }
@@ -107,8 +109,8 @@ header h1 {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background: #fff;
-    color: #000;
+    background: #CCCCCC;
+    color:#333;
 }
 
 .resources-header {
@@ -129,11 +131,11 @@ header h1 {
 }
 
 .card {
-    background: #f4f4f4;
+    background: #CCCCCC;
     padding: 15px;
     margin: 10px;
     border-radius: 8px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 50px 50px 50px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(33% - 20px);
     max-width: 300px;
     text-align: center;
@@ -165,7 +167,7 @@ header h1 {
 /* Reviews Section Styling */
 #reviews {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #CCCCCC;
     color: #333;
     overflow: hidden;
 }
@@ -194,8 +196,8 @@ header h1 {
 .review-box {
     min-width: 300px;
     padding: 15px;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #CCCCCC;
+    box-shadow: 0 50px 50px 50px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     font-size: 1rem;
 }
@@ -220,7 +222,8 @@ header h1 {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background: #f4f4f4;
+    background: #3D85C6;
+    color: #CCCCCC;
 }
 
 .benefits-header {
@@ -251,7 +254,7 @@ header h1 {
     border-radius: 10px;
     object-fit: cover;
     margin-bottom: 10px;
-    border: 5px solid #644646;
+    border: 5px solid #cccccc;
     transition: all 3s ease;
 }
 
@@ -273,10 +276,10 @@ header h1 {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background: #fff;
-    color: #000;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    background: #3D85C6;
+    color: #CCCCCC;
+    font-size: 1.5rem;
+  
 }
 
 .form-header {
@@ -289,12 +292,12 @@ header h1 {
 .form-header h2 {
     margin: 0;
     font-size: 2rem;
-    color: #333;
+    color: #CCCCCC;
 }
 
 .form-header p {
     font-size: 1rem;
-    color: #666;
+    color: #CCCCCC;
     text-align: center;
 }
 
@@ -333,26 +336,32 @@ form input::placeholder {
 }
 
 form button {
-    background: #644646;
-    color: #fff;
+    background: #CCCCCC;
+    color: #3D85C6;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.6rem;
+    width: 10rem;
+    font-weight: bolder;
+    border: 2px solid #5e82a1;
 }
 
 form button:hover {
-    background: #6b5151;
+    background: #3D85C6;
+    color: #CCCCCC;
+    border: 2px solid white ;
 }
 
 /* Footer Section */
 footer {
     text-align: center;
     padding: 20px;
-    background: #644646;
+    background: #CCCCCC;
     color: #000;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 footer p {
